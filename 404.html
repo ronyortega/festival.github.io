@@ -3,7 +3,7 @@
 <head>
   <base href="/festival.github.io/">
 
-  <script>
+<script>
     const path = window.location.pathname;
     if (!path.endsWith('/')) {
       window.location.href = path + '/';
@@ -11,11 +11,6 @@
   </script>
 </head>
 <body>
-  <script>
-    // Removemos a barra final da URL e redirecionamos para a mesma rota sem a barra
-    const path = window.location.pathname;
-    const newPath = path.slice(0, -1);
-    window.location.href = newPath;
-  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>

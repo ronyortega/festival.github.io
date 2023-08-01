@@ -11,6 +11,11 @@
   </script>
 </head>
 <body>
-  <script src="main.dart.js" type="application/javascript"></script>
+  <script>
+    // Removemos a barra final da URL e redirecionamos para a mesma rota sem a barra
+    const path = window.location.pathname;
+    const newPath = path.slice(0, -1);
+    window.location.href = newPath;
+  </script>
 </body>
 </html>
